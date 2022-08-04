@@ -1,13 +1,16 @@
 .container {
-  display: flex;
+  /* display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: center; */
+  display: flex;
+  flex-direction: inherit;
+  align-items: flex-end;
 
 }
 .card {  
-  border: 1px solid skyblue;
+  border: 1px solid white;
   border-radius: 4px;
-  box-shadow: 4px 4px 8px #ccc;
+  box-shadow: 2px 2px 4px rgb(0, 9, 9);
   margin: 10px 10px;
   overflow: hidden;
   cursor: pointer;
@@ -42,8 +45,7 @@
 .img:hover {
   cursor: pointer;
   animation-name: bounce;
-  -moz-animation-name: bounce;
-}
+  -moz-animation-name: bounce;}
 
 
 
