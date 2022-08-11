@@ -1,11 +1,23 @@
 .container {
-  /* display: flex;
-  flex-wrap: nowrap;
-  justify-content: center; */
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /* display: flex;
   flex-direction: inherit;
-  align-items: flex-end;
-
+  align-items: flex-end; */
+}
+.heading{
+  padding-left: 87px;
+  font-size: 32px;
+  font-weight: inherit;
+  font-style: oblique;
+}
+.heading2{
+  padding-top: 70px;
+  padding-left: 87px;
+  font-size: 32px;
+  font-weight: inherit;
+  font-style: oblique;
 }
 .card {  
   border: 1px solid white;
@@ -18,9 +30,8 @@
 }
 .card > h3 { 
   text-align: left;
-  font-size: 16px;
+  font-size: 10px;
   margin-left: 17px;
-  padding-top: 17px;
   letter-spacing: 0.5px;
   color: rgb(27, 25, 25);
 }
@@ -28,11 +39,11 @@
   margin-top: 10px;
   text-align: left;
   margin-left: 17px;
-  font-size: 12px;
+  /* font-size: 12px; */
   color: rgb(110, 110, 110);
 }
 .card > h5 {
-  margin-top: 10px;
+  margin-top: -10px;
   text-align: left;
   margin-left: 17px;
   font-size: 15px;
