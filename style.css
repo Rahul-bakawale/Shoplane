@@ -1,7 +1,8 @@
 .container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
+  
   /* display: flex;
   flex-direction: inherit;
   align-items: flex-end; */
