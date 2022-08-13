@@ -1,8 +1,67 @@
-.container {
+/* Header Css  */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; 
+  font-family: "Raleway", sans-serif; */
+}
+header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 145px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgb(17 16 16 / 50%);
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0;
+}
+body {
+  background-color: white
+}
+main {
+  margin-top: 150px;
+}
+.header-left {
+  margin-right: 20px;
+}
+.header-left > span {
+  font-size:25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #009688;
+  letter-spacing: 2px;
+  background: linear-gradient(to left, black,#009688);
+  /* background-image: linear-gradient(to right, #009688, black); */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header > nav > a{
+  font-weight: inherit;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  margin:  0px 45px;
+  padding-bottom: 4px;
+  text-decoration: none;
+}
+header > nav > a:hover {
+  text-decoration: none;
+  color: #009688;
+  /* border-bottom: 2px solid #009688; */
+}
+
+/* .icon-bar{
+  background-color: black;
+} */
+/* Card Css */
+.container {
+  display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  
   /* display: flex;
   flex-direction: inherit;
   align-items: flex-end; */
@@ -43,13 +102,16 @@
   /* font-size: 12px; */
   color: rgb(110, 110, 110);
 }
-.card > h5 {
-  margin-top: -10px;
+.card > h5  {
+  margin-top: 11px;
   text-align: left;
   margin-left: 17px;
   font-size: 15px;
   letter-spacing: 2px;
   color: #009688;
+}
+.card > h5::before {
+  content: 'Rs  ';
 }
 .card > img {
   width: 255px;
@@ -57,7 +119,8 @@
 .img:hover {
   cursor: pointer;
   animation-name: bounce;
-  -moz-animation-name: bounce;}
+  -moz-animation-name: bounce;
+}
 
 
 
