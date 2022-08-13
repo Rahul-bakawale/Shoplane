@@ -2,8 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; 
-  font-family: "Raleway", sans-serif; */
+  box-sizing: border-box; 
+  /* font-family: "Raleway", sans-serif; */
 }
 header {
   display: flex;
@@ -54,9 +54,12 @@ header > nav > a:hover {
   /* border-bottom: 2px solid #009688; */
 }
 
-/* .icon-bar{
-  background-color: black;
-} */
+header > div > a{
+  font-size: 20px;
+  padding-left: 20px;
+  margin: 25px;
+  color: black;
+}
 /* Card Css */
 .container {
   display:flex;
