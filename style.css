@@ -1,4 +1,4 @@
-/* Header Css  */
+/* Header Section  */
 * {
   margin: 0;
   padding: 0;
@@ -53,14 +53,15 @@ header > nav > a:hover {
   color: #009688;
   /* border-bottom: 2px solid #009688; */
 }
-
 header > div > a{
   font-size: 20px;
   padding-left: 20px;
   margin: 25px;
   color: black;
 }
-/* Card Css */
+/* Header section closed */
+
+/* Card Section */
 .container {
   display:flex;
   flex-wrap: wrap;
@@ -90,6 +91,10 @@ header > div > a{
   overflow: hidden;
   cursor: pointer;
   background-color: white; 
+}
+ .card > a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 .card > h3 { 
   text-align: left;
@@ -124,7 +129,33 @@ header > div > a{
   animation-name: bounce;
   -moz-animation-name: bounce;
 }
+/* card section closed */
 
-
-
-
+/* Footer section  start*/
+footer{
+  background-color: black;
+  height: 180px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer ul li h3  {
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+footer ul li a {
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b8b8b8;
+  font-size: 12px;
+}
+footer ul li  a:hover {
+  color: #009688;
+}
+/* footer senction closed */
