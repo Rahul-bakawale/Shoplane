@@ -221,7 +221,6 @@ var productList = [
   }
 ];
 
-
 (function cardDetails(){
   const container = document.querySelector(".container");
   // const accessorie = productList.filter((value)=>value.isAccessory)

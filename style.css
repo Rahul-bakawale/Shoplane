@@ -134,8 +134,8 @@ header > div > a{
 /* Footer section  start*/
 footer{
   background-color: black;
-  height: 180px;
-  padding: 30px;
+  height: 221px;
+  padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -145,15 +145,17 @@ footer ul li h3  {
   text-decoration: none;
   text-transform: uppercase;
   color: whitesmoke;
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 10px;
 }
 footer ul li a {
+  line-height: 23px; /* 4px +12px + 4px */
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
   color: #b8b8b8;
-  font-size: 12px;
+  font-size: 14px;
+  font-style: italic;
 }
 footer ul li  a:hover {
   color: #009688;
