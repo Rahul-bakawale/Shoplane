@@ -222,9 +222,19 @@ var productList = [
 ];
 
 (function cardDetails(){
-  const container = document.querySelector(".container");
-  // const accessorie = productList.filter((value)=>value.isAccessory)
-  const clothing = productList.filter((value)=> !value.isAccessory)
+const page = location.pathname;
+const isHome = page.includes("index");
+if (isHome) {
+  $(".banner").slick({
+    infinite: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+}  
+const container = document.querySelector(".container");
+// const accessorie = productList.filter((value)=>value.isAccessory)
+const clothing = productList.filter((value)=> !value.isAccessory)
 
   clothing.map((cloths,index)=>{
     const clothList = document.createElement("div");
@@ -238,7 +248,7 @@ var productList = [
 
     const brand = document.createElement("h4");
     brand.innerHTML = cloths.brand
-  
+
     const price = document.createElement("h5");
     price.innerHTML = cloths.price
 
@@ -247,6 +257,5 @@ var productList = [
     clothList.append(brand);
     clothList.append(price);
     container.append(clothList);
-
   })
 })();

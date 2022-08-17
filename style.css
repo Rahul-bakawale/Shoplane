@@ -17,6 +17,17 @@ header {
   right: 0px;
   top: 0;
 }
+.banner {
+  padding-top: 95px;
+  height: 100%;
+  width: 100%;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-color: white
 }
